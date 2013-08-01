@@ -3,7 +3,7 @@
 
 #include "sigar_def.h"
 
-class sigarCPU
+class CPU
 {
 private:
 	sigar_uint64_t
@@ -17,18 +17,18 @@ private:
 	stolen,
 	total;
 public:
-	SIGAR_DECLARE(int) getCPU(sigar &,sigarCPU &);
+	SIGAR_DECLARE(int) getCPU(sigar &,CPU &);
 };
 
-class sigarCPUList
+class CPUList
 {
 private:
 	unsigned long number;
     unsigned long size;
-    sigarCPU *data;
+    CPU *data;
 public:
-	SIGAR_DECLARE(int) getCPUList(sigar &,sigarCPUList &);
-	SIGAR_DECLARE(int) destroyCPUList(sigar &,sigarCPUList &);
+	SIGAR_DECLARE(int) getCPUList(sigar &,CPUList &);
+	SIGAR_DECLARE(int) destroyCPUList(sigar &,CPUList &);
 };
 
 #endif

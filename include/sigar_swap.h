@@ -3,7 +3,7 @@
 
 #include "sigar_def.h"
 
-class sigarSwap
+class Swap
 {
 private:
 	sigar_uint64_t
@@ -13,7 +13,7 @@ private:
 	page_in,
 	page_out;
 public:
-	SIGAR_DECLARE(int) getSwap(sigar &,sigarSwap &);
+	SIGAR_DECLARE(int) getSwap(sigar &,Swap &);
 };
 
 #endif

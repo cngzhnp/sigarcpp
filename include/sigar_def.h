@@ -97,5 +97,6 @@ typedef uid_t sigar_uid_t;
 typedef gid_t sigar_gid_t;
 
 typedef struct sigar_t sigar_t;
+#define SIGAR_CRED_NAME_MAX 512
 #endif
 

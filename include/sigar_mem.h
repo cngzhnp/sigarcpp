@@ -3,7 +3,7 @@
 
 #include "sigar_def.h"
 
-class sigarMem
+class Mem
 {
 private:
 	sigar_uint64_t
@@ -16,7 +16,7 @@ private:
     double used_percent;
     double free_percent;
 public:
-	SIGAR_DECLARE(int) getMemory(sigar &,sigarMem &);
+	SIGAR_DECLARE(int) getMemory(sigar &,Mem &);
 };
 
 #endif

@@ -3,7 +3,7 @@
 
 #include "sigar_def.h"
 
-class sigarResourceLimit
+class ResourceLimit
 {
 private:
 	/* RLIMIT_CPU */
@@ -27,7 +27,7 @@ private:
 	/* RLIMIT_AS */
 	sigar_uint64_t virtual_memory_cur, virtual_memory_max;
 public:
-	SIGAR_DECLARE(int) getResourceLimit(sigar &,sigarResourceLimit &);
+	SIGAR_DECLARE(int) getResourceLimit(sigar &,ResourceLimit &);
 };
 
 #endif

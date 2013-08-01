@@ -3,7 +3,7 @@
 
 #include "sigar_def.h"
 
-class sigarCPUInfo
+class CPUInfo
 {
 private:
 	char vendor[128];
@@ -17,15 +17,15 @@ private:
 	int cores_per_socket;
 };
 
-class sigarCPUInfoList
+class CPUInfoList
 {
 private:
 	unsigned long number;
 	unsigned long size;
-	sigarCPUInfo *data;
+	CPUInfo *data;
 public:
-	SIGAR_DECLARE(int) getCPUInfoList(sigar &,sigarCPUInfoList &);
-	SIGAR_DECLARE(int) destroyCPUInfoList(sigar &,sigarCPUInfoList &);
+	SIGAR_DECLARE(int) getCPUInfoList(sigar &,CPUInfoList &);
+	SIGAR_DECLARE(int) destroyCPUInfoList(sigar &,CPUInfoList &);
 };
 
 #endif
