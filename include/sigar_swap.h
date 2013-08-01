@@ -6,12 +6,12 @@
 class sigarSwap
 {
 private:
-	 sigar_uint64_t
-        total,
-        used, 
-        free,
-        page_in,
-        page_out;
+	sigar_uint64_t
+	total,
+	used, 
+	free,
+	page_in,
+	page_out;
 public:
 	SIGAR_DECLARE(int) getSwap(sigar &,sigarSwap &);
 };
