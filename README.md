@@ -1,1 +1,1 @@
-Uptime and loadAvg struct schemas are merged.
+Uptime and loadAvg struct schemas are merged on sigar_uptime.h
