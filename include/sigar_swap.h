@@ -15,3 +15,5 @@ private:
 public:
 	SIGAR_DECLARE(int) getSwap(sigar &,sigarSwap &);
 };
+
+#endif

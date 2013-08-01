@@ -6,7 +6,6 @@
 class sigarCPU
 {
 private:
-	
 	sigar_uint64_t
 		user, 
     	sys,
@@ -20,3 +19,16 @@ private:
 public:
 	SIGAR_DECLARE(int) getCPU(sigar &,sigarCPU &);
 };
+
+class sigarCPUList
+{
+private:
+	unsigned long number;
+    unsigned long size;
+    sigarCPU *data;
+public:
+	SIGAR_DECLARE(int) getCPUList(sigar &,sigarCPUList &);
+	SIGAR_DECLARE(int) destroyCPUList(sigar &,sigarCPUList &);
+};
+
+#endif

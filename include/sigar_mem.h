@@ -18,3 +18,5 @@ private:
 public:
 	SIGAR_DECLARE(int) getMemory(sigar &,sigarMem &);
 };
+
+#endif
