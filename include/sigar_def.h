@@ -98,5 +98,13 @@ typedef gid_t sigar_gid_t;
 
 typedef struct sigar_t sigar_t;
 #define SIGAR_CRED_NAME_MAX 512
+
+#define SIGAR_PROC_STATE_SLEEP  'S'
+#define SIGAR_PROC_STATE_RUN    'R'
+#define SIGAR_PROC_STATE_STOP   'T'
+#define SIGAR_PROC_STATE_ZOMBIE 'Z'
+#define SIGAR_PROC_STATE_IDLE   'D'
+
+#define SIGAR_PROC_NAME_LEN 128
 #endif
 
