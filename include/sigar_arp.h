@@ -1,5 +1,5 @@
-#ifndef _SIGAR_TCP_H
-#define _SIGAR_TCP_H
+#ifndef _SIGAR_ARP_H
+#define _SIGAR_ARP_H
 
 #include "sigar_def.h"
 
@@ -23,3 +23,5 @@ public:
 	SIGAR_DECLARE(int) getArpList(sigar &, ArpList &);
 	SIGAR_DECLARE(int) destroyArpList(sigar &, ArpList &;
 };
+
+#endif
