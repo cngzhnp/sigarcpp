@@ -106,5 +106,77 @@ typedef struct sigar_t sigar_t;
 #define SIGAR_PROC_STATE_IDLE   'D'
 
 #define SIGAR_PROC_NAME_LEN 128
+
+#define SIGAR_FS_NAME_LEN SIGAR_PATH_MAX
+#define SIGAR_FS_INFO_LEN 256
+
+
+#define SIGAR_INET6_ADDRSTRLEN 46
+
+#define SIGAR_MAXDOMAINNAMELEN 256
+#define SIGAR_MAXHOSTNAMELEN 256
+
+#define SIGAR_RTF_UP      0x1
+#define SIGAR_RTF_GATEWAY 0x2
+#define SIGAR_RTF_HOST    0x4
+
+/*
+ * platforms define most of these "standard" flags,
+ * but of course, with different values in some cases.
+ */
+#define SIGAR_IFF_UP          0x1
+#define SIGAR_IFF_BROADCAST   0x2
+#define SIGAR_IFF_DEBUG       0x4
+#define SIGAR_IFF_LOOPBACK    0x8
+#define SIGAR_IFF_POINTOPOINT 0x10
+#define SIGAR_IFF_NOTRAILERS  0x20
+#define SIGAR_IFF_RUNNING     0x40
+#define SIGAR_IFF_NOARP       0x80
+#define SIGAR_IFF_PROMISC     0x100
+#define SIGAR_IFF_ALLMULTI    0x200
+#define SIGAR_IFF_MULTICAST   0x800
+#define SIGAR_IFF_SLAVE       0x1000
+#define SIGAR_IFF_MASTER      0x2000
+#define SIGAR_IFF_DYNAMIC     0x4000
+
+#define SIGAR_NULL_HWADDR "00:00:00:00:00:00"
+
+/* scope values from linux-2.6/include/net/ipv6.h */
+#define SIGAR_IPV6_ADDR_ANY        0x0000
+#define SIGAR_IPV6_ADDR_UNICAST    0x0001
+#define SIGAR_IPV6_ADDR_MULTICAST  0x0002
+#define SIGAR_IPV6_ADDR_LOOPBACK   0x0010
+#define SIGAR_IPV6_ADDR_LINKLOCAL  0x0020
+#define SIGAR_IPV6_ADDR_SITELOCAL  0x0040
+#define SIGAR_IPV6_ADDR_COMPATv4   0x0080
+
+#define SIGAR_NETCONN_CLIENT 0x01
+#define SIGAR_NETCONN_SERVER 0x02
+
+#define SIGAR_NETCONN_TCP  0x10
+#define SIGAR_NETCONN_UDP  0x20
+#define SIGAR_NETCONN_RAW  0x40
+#define SIGAR_NETCONN_UNIX 0x80
+
+enum {
+    SIGAR_TCP_ESTABLISHED = 1,
+    SIGAR_TCP_SYN_SENT,
+    SIGAR_TCP_SYN_RECV,
+    SIGAR_TCP_FIN_WAIT1,
+    SIGAR_TCP_FIN_WAIT2,
+    SIGAR_TCP_TIME_WAIT,
+    SIGAR_TCP_CLOSE,
+    SIGAR_TCP_CLOSE_WAIT,
+    SIGAR_TCP_LAST_ACK,
+    SIGAR_TCP_LISTEN,
+    SIGAR_TCP_CLOSING,
+    SIGAR_TCP_IDLE,
+    SIGAR_TCP_BOUND,
+    SIGAR_TCP_UNKNOWN
+};
+
+#define SIGAR_SYS_INFO_LEN SIGAR_MAXHOSTNAMELEN /* more than enough */
+#define SIGAR_FQDN_LEN 512
+
 #endif
 
