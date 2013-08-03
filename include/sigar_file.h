@@ -71,5 +71,4 @@ public:
 	SIGAR_DECLARE(int) pingFileSystem(sigar &, FileSystem &);
 };
 
-class 
 #endif 
