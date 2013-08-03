@@ -51,6 +51,7 @@ private:
 	sigar_gid_t egid;
 public:
 	SIGAR_DECLARE(int) getProcCred(sigar &,sigar_pid_t, ProcCred &);
+	SIGAR_DECLARE(int) getProcPort(sigar &, int, unsigned long, sigar_pid_t);
 };
 
 class ProcCredName
