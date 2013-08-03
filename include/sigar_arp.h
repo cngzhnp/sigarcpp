@@ -21,7 +21,7 @@ private:
 	Arp *data;
 public:
 	SIGAR_DECLARE(int) getArpList(sigar &, ArpList &);
-	SIGAR_DECLARE(int) destroyArpList(sigar &, ArpList &;
+	SIGAR_DECLARE(int) destroyArpList(sigar &, ArpList &);
 };
 
 #endif
