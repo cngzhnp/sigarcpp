@@ -169,6 +169,7 @@ public:
 private:
 	SIGAR_DECLARE(int) getNetState(sigar &, NetState &,int);
 	SIGAR_DECLARE(int) getPortNetState(sigar &, NetState &, int, NetAddress &, unsigned long);
+	SIGAR_DECLARE(int) getNetListenAddress(sigar &, unsigned long, NetAddress &);
 };
 
 #endif
