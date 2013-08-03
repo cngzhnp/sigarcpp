@@ -5,3 +5,5 @@
 -Net structs are merged on sigar_net header file.
 
 -sigar_net_listen_address_get function is placed under NetState class.
+
+-sigar_proc_port_get function is placed under ProcCred class.
