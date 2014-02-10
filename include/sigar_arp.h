@@ -6,8 +6,10 @@
 class Arp
 {
 private:
-	char ifname[MAX_INTERFACE_NAME_LEN];
-	char type[64];
+	//char ifname[MAX_INTERFACE_NAME_LEN];
+	string ifname;
+	//char type[64];
+	string type;
 	sigar_net_address_t hwaddr;
 	sigar_net_address_t address;
 	sigar_uint64_t flags;
